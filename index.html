@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolezinho</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Qual Role tu prefere?</h1>
+
+      <form id="formPlanejamento">
+        <strong><p>Escolha alguma opção abaixo:</p></strong>
+        <select id="tipoEncontro">
+          <option value="">Selecione</option>
+          <option value="Role">Role</option>
+          <option value="Cinema">Cinema</option>
+          <option value="Netflix">Netflix</option></select
+        ><br /><br />
+
+        <strong><p>Escolha uma das opções:</p></strong>
+        <select id="opcaoEspecifica">
+          <option value="">Selecione</option></select
+        ><br /><br />
+
+        <strong><p>Escolha o horário desejado:</p></strong>
+        <input type="text" id="horario" placeholder="HH:MM" /><br /><br />
+
+        <strong
+          ><button id="iniciarPlanejamento" type="button">
+            Iniciar Planejamento
+          </button></strong
+        >
+        ><br /><br />
+        <button id="resetarPlanejamento" type="button">Resetar</button>
+      </form>
+      <div>
+        <div id="resultado"></div>
+        <div id="mensagemErro" style="color: red"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
